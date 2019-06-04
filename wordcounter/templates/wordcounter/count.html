@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--CSS에서 html 높이 속성이 안 먹혀서 인라인으로 먹임-->
+<!--<style type="text/css"> 
+    html, body { height:100%; overflow:hidden }
+</style>-->
+
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WordCounter</title>
+    <link href="{% static 'css/countstyle.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="count">
+        <div class="result">
+            <h2> Wordcounter 결과입니다</h2>
+            <h3>당신이 입력한 텍스트는 {{total}}<!--총 단어 수-->개로 구성되어 있습니다.</h3>
+            <a href="{% url 'home' %}">다시 하기</a>
+        </div>
+        <div class="input">
+            <h3> 입력받은 텍스트: </h3>
+            <!-- 입력받은 전체 텍스트-->
+            "{{fulltext}}"
+        </div>
+        <div class="times">
+            <h3> 단어 세기</h3>
+            <!--'단어'- '단어 나온 횟수'-->  
+            {% for word, countTotal in dictionary %}
+            {{word}}:{{countTotal}}
+            <br>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--CSS에서 html 높이 속성이 안 먹혀서 인라인으로 먹임-->
+<!----<style type="text/css"> 
+    html, body { height:100%; overflow:hidden }
+</style>-->
+
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WordCounter</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="{% static 'css/aboutstyle.css' %}" rel="stylesheet">
+</head>
+
+<body><br><br>
+    <h3>글자 수를 셀 수 있는 WordCounter입니다.</h3>
+    <div class="button1">
+        <div><a class="fas fa-home fa-2x"a href="{%url 'home' %}"></a></div>
+        <p class="message1">첫 화면으로 돌아가기</p>
+    </div>
+    <br>
+    <div class="contact">
+        <h3>customed by</h3>
+        <p class="typewriter"><br><br>멋쟁이 사자처럼 7기 김근영 </p> 
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+
+@font-face { 
+    font-family: 'locus_sangsang'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'UhBeeSeulvely'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSeulvely.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+    }    
+@font-face { 
+    font-family: 'UhBeeDongKyung'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeDongKyung.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+body{
+    background-image: linear-gradient(to top, #d8b5ff 0%, #1eae98 100%);
+    overflow: hidden;
+    height: 100vh;
+}
+h3 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    font-family: 'locus_sangsang'; 
+    text-align: center;
+}
+.block1{
+    font-weight: bold;
+    font-family: 'locus_sangsang'; 
+    display: block;
+    background-color: #e3bab3;
+    width: 230px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.submit{
+    font-size: 1em;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+    border: 2px solid #36384c;
+    height: 30px;
+    display: block;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.submit p{
+    font-family: 'locus_sangsang'; 
+    color: #36384c;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+textarea{
+    font-family: 'UhBeeDongKyung'; 
+    font-size: 1.5em;
+    -webkit-appearance: textarea;
+    background-color: transparent;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    /* resize: auto; */
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: initial;
+    border-image: initial;
+    padding: 2px;
+    resize: none;
+    width: 400px;
+    height: 200px;
+    outline:none;
+}
+a{
+    font-family: 'UhBeeSeulvely'; 
+    font-size: 1rem;
+    display: block;
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 440px;
+    margin-top:30px;
+}

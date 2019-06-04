@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--CSS에서 html 높이 속성이 안 먹혀서 인라인으로 먹임-->
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>WordCounter</title>
+    <link href="{% static 'css/homestyle.css' %}" rel="stylesheet">
+</head>
+<body>
+    <br><br>
+    <div class="block1"><h3>WordCounter</h3></div>
+    <h3>단어의 수를 셀 수 있습니다.<br> 아래에 원하는 텍스트를 입력해주세요!</h3>
+    <br>  
+    <a href="{%url 'about' %}">about</a>  
+    <form action="{%url 'count' %}">
+        <textarea name="fulltext"></textarea>
+        <button class = "submit"><p>단어 세기</p></button>
+    </form>
+    </<h3>
+</body>
+</html>
